@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "description": "app de practica de node.js",
+  "keywords": [
+    "dima"
+  ],
+  "homepage": "https://github.com/Dima-Sh13/JS-Node.js-MongoDB-Express#readme",
+  "bugs": {
+    "url": "https://github.com/Dima-Sh13/JS-Node.js-MongoDB-Express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dima-Sh13/JS-Node.js-MongoDB-Express.git"
+  },
+  "license": "ISC",
+  "author": "Dima Shalupnya",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo"
+  }
+}
