@@ -28,6 +28,34 @@ var texto = "follow the white rabbit";  // string
 texto.substring(11,5) // white
 typeof(texto); // string
 
+// se suele usar el tipo primitivo
+
+
+// En javascript no se puede escribir como multilinea
+
+var longText = "line1\n" +
+"line2";
+// o haciendo un array y luego .join en el retorno de carro
+
+var textoLargo = ["linea1",
+    "linea2"
+].join("\n")
+
+
+////////// OBJECT AND ARRAYS
+
+var objeto = {
+    numero: 1,
+    texto: "hola",
+    esCero: function(v){return v == 0}
+}
+
+objeto.esCero(0); // True
+objeto.texto; // "hola"
+objeto["texto"]; // "hola"
+
+
+
 
 
 
