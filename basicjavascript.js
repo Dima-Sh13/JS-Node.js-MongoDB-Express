@@ -64,5 +64,16 @@ for (var propietyName in objeto) {
     }
 }
 
+/// en los arrays en js podemos meter los objetos del tipo que queramos, como en python
 
+var array1 = new Array(5)
+var array2 = new Array(1,2,3,4,5)
 
+// metodos de array
+
+array1.push(5); // añade 5 al final del array y nos devuelve el length
+array1.unshift(0); // añade 0 al final del arrya y nos devulve el lenght
+array1.pop();// elimina el ultimo item y lo devuelve
+array1.shift(); // elimina el primero y lo devuelve
+
+array1.join(","); // devuelve el string de los elementos y los une por la ","
