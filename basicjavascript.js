@@ -55,8 +55,14 @@ objeto.texto; // "hola"
 objeto["texto"]; // "hola"
 
 
+// recorriedno las propiedades de un objeto
 
+for (var propietyName in objeto) {
+    if (objeto.hasOwnProperty(propietyName)) {
+        console.log("la propiedad" + propietyName + "existe con el valor" + objeto[propietyName]);
 
+    }
+}
 
 
 
