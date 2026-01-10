@@ -77,3 +77,18 @@ array1.pop();// elimina el ultimo item y lo devuelve
 array1.shift(); // elimina el primero y lo devuelve
 
 array1.join(","); // devuelve el string de los elementos y los une por la ","
+
+
+// iteacion de arrays
+
+for (var i = 0; i < array2.length; i++) {
+    var elemento = array2[i];         /// se usa var o tambien let
+    console.log(elemento);
+}
+
+rows.forEach(function(row) {
+    console.log(row);         /// aqui definimos una funcion que se ejecuta sobre cada elemento del array
+});
+
+
+/// HOISTING
