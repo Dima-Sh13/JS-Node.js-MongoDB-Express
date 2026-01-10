@@ -47,5 +47,16 @@ console.log(array);
 console.log(array[0]);
 console.log(array[2](3));
 
+// hoisting
 
+var x = 100;
+
+function y() {
+    if (x == 20) {
+        var x = 30;
+    }
+    return x;
+}
+
+console.log(x, y());
 
