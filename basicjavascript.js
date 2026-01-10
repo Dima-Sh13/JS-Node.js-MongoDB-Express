@@ -92,3 +92,25 @@ rows.forEach(function(row) {
 
 
 /// HOISTING
+
+// las declaracione de variables en JS son "hoisted". esto significa que el interprete va a mover al principio de su contexto (function)
+//la declaracion. manteniendo la inicializacion donde estba
+
+var pinto = "my value"
+
+function pinta () {
+    console.log("pinto", pinto); // my value
+    // si aqui hacemos. var pinto = "local value"; // esto haria hoisting de pinto y sera undefined ya que subiria arriba de la funcion. pero solo la declaracion , no la asignacion
+
+};
+pinta();
+
+
+var x = 100;
+var y = function () {
+    if (x ===20) {  // aqui x es undefined porque esta dentro de la funcion. por tanto siempre sera undefined.
+        var x = 30;
+    }
+    return x;
+};
+console.log(x,y());
