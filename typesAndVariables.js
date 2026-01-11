@@ -60,3 +60,9 @@ function y() {
 
 console.log(x, y());
 
+console.log(x,y());
+
+let array3 = [1,2,3,4,];
+
+
+console.log(array3[2]);
