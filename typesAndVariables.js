@@ -106,4 +106,34 @@ switch (expresion) {
         //[break;]        
 } // los brakes son muy importantes ya que si no ejecuta todos los casos
 
+// bucles for 
+
+for (var i = 0; i < options.lenght; i++) {  // declaramos la variable de iteracion i. var i = 0, luego la comprobamos con la condicion mientras se cumple y cada vuelta crece la variable con i++
+    var elemento = options[i];
+}
+// bucles while (do)something (while) se cumple la opcion
+do {
+    i += 1;
+} while (i<55);
+
+// tambien se pueden definir asi:
+
+while (n < 35) {  // se declara la condicion antes y luego se define el codigo a ejecutar
+    n++;
+}
+
+// para parar un bucle antes de tiempo se utiliza break
+// tambien existe continue
+
+
+// CONTROL DE ERRORES
+
+//en node.js podemos devolver errores de varias formas. las mas comunes:
+
+//1. Lanzando una excepcion para que el codigo llamante la gestione con try catch
+//2. devolviendolo en el callback de la llamada
+
+
+// COMO REGLA GENERAL USAREMSO PRIMERO THROW EN CODIGO SINCRONO Y CALLBACK EN EL ASINCRONO
+// throw es basicamente raise de python
 
