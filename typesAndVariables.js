@@ -85,13 +85,13 @@ console.log(array3[2]);
 
 // para poner if como expresion
 
-var nombre = unaVariable ? primeraExpresion : segundaExpresion;
+// var nombre = unaVariable ? primeraExpresion : segundaExpresion;
 
 
 // aqui se asigne a nombre si una variable es verdadeo se asigna a nombre primeraExpresion
 // si es falso se asignaria segunda.
 
-var nombreCoche = CaretPosition.name ? car.name : "";
+// var nombreCoche = CaretPosition.name ? car.name : "";
 
 // swith 
 switch (expresion) {
@@ -137,3 +137,19 @@ while (n < 35) {  // se declara la condicion antes y luego se define el codigo a
 // COMO REGLA GENERAL USAREMSO PRIMERO THROW EN CODIGO SINCRONO Y CALLBACK EN EL ASINCRONO
 // throw es basicamente raise de python
 
+// TRABAJANDO CON JSON
+
+// se utiliza para serializar objeto u otro tipo de datos
+// se usa como alternativa a xml por ser mucho mas ligero
+
+let empleado = {
+    nombre: "Thomas Anderson",
+    profesion: "Developer"
+};
+
+let stringp = JSON.stringify(empleado); // esto nos convierte en string el objeto empleado
+
+
+let textoJSON = '{"nombre":"Thomas Anderson", "profesion":"Developer"}';
+
+let parseado = JSON.parse(textoJSON);
