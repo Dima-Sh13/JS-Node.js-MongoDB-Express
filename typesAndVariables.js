@@ -66,3 +66,27 @@ let array3 = [1,2,3,4,];
 
 
 console.log(array3[2]);
+
+
+/// operadores y control de flujo
+
+// practicamente igual que en elos demas lenguajes
+
+// control de flujo
+
+// tambien igual que en los demas lenguajes, debemos acordadrnos de
+// escribir los {}
+
+// or en javascript se representa || 
+// and se representa &&
+// igual que ne python la ngacion o contratio se representa con ! 
+// delante de la variable
+
+
+// para poner if como expresion
+
+var nombre = unaVariable ? primeraExpresion : segundaExpresion
+
+
+// aqui se asigne a nombre si una variable es verdadeo se asigna a nombre primeraExpresion
+// si es falso se asignaria segunda.
