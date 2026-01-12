@@ -85,8 +85,25 @@ console.log(array3[2]);
 
 // para poner if como expresion
 
-var nombre = unaVariable ? primeraExpresion : segundaExpresion
+var nombre = unaVariable ? primeraExpresion : segundaExpresion;
 
 
 // aqui se asigne a nombre si una variable es verdadeo se asigna a nombre primeraExpresion
 // si es falso se asignaria segunda.
+
+var nombreCoche = CaretPosition.name ? car.name : "";
+
+// swith 
+switch (expresion) {
+    case 1:
+        statements_1
+        //[break;]
+    case 2 :
+        statements_2
+        //[break;]
+    default:
+        statements_def
+        //[break;]        
+} // los brakes son muy importantes ya que si no ejecuta todos los casos
+
+
