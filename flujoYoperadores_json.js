@@ -47,4 +47,16 @@ array = [1,2,3,4,5,6]
 for ( let i=0; i < array.length; i++) {
     let numero = array[i]
     console.log((numero == 3 ? "tres" : numero))
+ 
 }
+
+
+
+let boject2 = {
+    param1:"large",
+    param2:"loud"
+};
+
+let stringed = JSON.stringify(boject2);
+
+console.log(stringed)
