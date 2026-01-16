@@ -46,7 +46,7 @@ array = [1,2,3,4,5,6]
 
 for ( let i=0; i < array.length; i++) {
     let numero = array[i]
-    console.log((numero == 3 ? "tres" : numero))
+    console.log((numero == 3 ? "tres" : numero));
  
 }
 
@@ -59,4 +59,16 @@ let boject2 = {
 
 let stringed = JSON.stringify(boject2);
 
-console.log(stringed)
+console.log(stringed);
+
+
+
+let verdad = {
+    verdadVerdadera: "tengo que ponerme enserio joder",
+    edad: 30,
+    urgencia: true
+};
+
+let verdadString = JSON.stringify(verdad);
+
+console.log(verdadString);
