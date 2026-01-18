@@ -50,25 +50,4 @@ for ( let i=0; i < array.length; i++) {
  
 }
 
-
-
-let boject2 = {
-    param1:"large",
-    param2:"loud"
-};
-
-let stringed = JSON.stringify(boject2);
-
-console.log(stringed);
-
-
-
-let verdad = {
-    verdadVerdadera: "tengo que ponerme enserio joder",
-    edad: 30,
-    urgencia: true
-};
-
-let verdadString = JSON.stringify(verdad);
-
-console.log(verdadString);
+let proposito = true;
