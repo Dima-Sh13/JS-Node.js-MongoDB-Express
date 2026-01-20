@@ -57,3 +57,24 @@ let proposito = true;
 
 
 console.log(console.time())
+
+
+
+// FUNCIONES (en node.js usadas normalmente para asincronia)
+
+// en javascript no hace falta pasarle a la funcion todos los parametros que tenga declarados
+
+// en js las funciones son objetos
+
+
+// CREACION COMO DECLARACION
+
+// requieren nombre, estan posicionadas a nivel de programa o en el cuerpo de otra funcion, se hoistean, tienen acceso al contexto de quien las llama
+
+
+function suma(numero1, numero2) {
+    return numero1 +numero2;
+}
+
+console.log(suma(7 + 8))
+
