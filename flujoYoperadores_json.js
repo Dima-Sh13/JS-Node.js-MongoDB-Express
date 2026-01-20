@@ -78,3 +78,38 @@ function suma(numero1, numero2) {
 
 console.log(suma(7 + 8))
 
+// CREACION COMO EXPRESION
+
+// tienen acceso al contexto, al ser expresiones se pueden declarar en cualquier sitio donde pueda ir un valor
+// no hacen hoisting, solo se pueden usar despues de su definicion
+// pueden tener nombre pero solo es visible dentro de ella
+
+let suma1 = function (numero1, numero2) {
+    return numero1 + numero2;  // en este ejemplo la variable suma1 si hace hoisting pero la funcion dentro de ella no
+}
+
+
+// CREACION CON EL CREADOR DE FUNCIONES
+
+// no tienen acceso a donde se han creado pero si al global
+let creadorFunciones = new Function("numero1 + numero2");
+
+
+x = 10;
+function func() {
+    let y = 30;
+    let bar = new Function("alert(x); alert(y);");
+    bar();
+}
+
+// aqui vemos que bar si puede acceder a x que esta fuera pero no a y.
+
+
+var calculadora = {
+    suma: function(a,b) { return a + b},
+    resta: function(a,b) {return a-b}
+}
+
+// creacion de instancias y objetos
+
+// cuando se usa new al invocar una funcion, se comporta como un creador de objetos
