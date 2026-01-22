@@ -21,3 +21,7 @@ server.listen(1337, "127.0.0.1");
 console.log("servidor working properly on 127.0.0.1:1337")
 
 
+console.log(server)
+
+///serverdevelopment
+
