@@ -113,3 +113,26 @@ var calculadora = {
 // creacion de instancias y objetos
 
 // cuando se usa new al invocar una funcion, se comporta como un creador de objetos
+
+function Fruta() {
+    let nombre, familia;
+    this.getNombre = function() {return nombre;};
+    this.setNombre = function(value) {nombre = value};
+    this.getFamilia = function() {return familia};
+    this.setFamilia = function(value) {familia = value};
+}
+
+
+var limon = new Fruta();
+limon.setNombre("Citrus Limon");
+limon.setFamilia("citrico");
+
+console.log(limon.getFamilia(), limon.getNombre())
+
+
+// INSTANCIAS CON DEFAULT
+
+function Persona(nombre, edad){
+    this.nombre = nombre || "bebe";
+    this.edad = edad || 0;
+}
