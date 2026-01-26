@@ -2,6 +2,13 @@
 
 console.log('Empiezo');
 
+
+
+
+
+
+
+
 function escribeTras2Segundos(texto, callback) {
   setTimeout(function() {
     console.log(texto);
