@@ -35,3 +35,6 @@ var lista = [1, 2, 'tres', 4, 5];
 serie(lista, escribeTras2Segundos, function(){
   console.log('he terminado');
 });
+
+
+serie()
