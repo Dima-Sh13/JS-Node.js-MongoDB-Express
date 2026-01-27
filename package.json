@@ -21,6 +21,7 @@
     "test": "echo"
   },
   "dependencies": {
+    "async": "^3.2.6",
     "chance": "^1.1.13"
   }
 }

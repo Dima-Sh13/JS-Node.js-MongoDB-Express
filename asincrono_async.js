@@ -21,3 +21,5 @@ var lista = [1, 2, 'tres', 4, 5];
 async.eachSeries(lista, escribeTras2Segundos, function(){
   console.log('he terminado');
 });
+
+// esta libreria es la que se esta usando ahora a nivel profesional
