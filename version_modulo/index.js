@@ -13,9 +13,18 @@ var versionModulo = function(moduleName, callBack) {
         //si no ha habido error
         // convertimos contenido en objeto
 
-        var packageJson = JSON.parse(datos);
+        var packageJson = {};
+        try {
+            packageJson = JSON.parse(datos);
+        } catch(e) {
+            callBack('error al rparsear ', + fichero);
+            return;
+        }
+
+
+
         
-        if (!packageJson.version) {
+        if (packageJson.version && !packageJson.version ) {
             callBack('No se encuentra la etiqueta de version en el archivo:' + fichero);
             return;
         }
