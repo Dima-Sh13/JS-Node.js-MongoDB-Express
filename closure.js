@@ -29,8 +29,26 @@ function creaAgente(nombre) {
         },
         leerEdad: function() {
             return edad;
+        },
+        escribe: function() {
+            console.log("soy " + nombre + " " + "y tengo " + edad)
         }
     }
 }
 
+// creador de agentes creado
+
+
+var smith = creaAgente('Smith');
+smith.ponEdad(35);
+
+var Jonhson = creaAgente("jonshon");
+Jonhson.ponEdad(56);
+
+console.log(smith.leerEdad());
+
+console.log(Jonhson.leerNombre());
+
+
+setTimeout(smith.escribe, 5000);
 
