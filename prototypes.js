@@ -30,4 +30,31 @@ Persona.prototype.saluda = function() {
 
 
 console.log(persona.name);
-persona.saluda()
+persona.saluda();
+
+
+// Herencia de Persona
+
+
+function Agente(nombre) {
+    Persona.call(this, nombre);
+    //esto ejecuta el constructor de persona con el this de agente
+    //definiendo en el this de agente una propiedad name
+    //y asignandole el parametro recibido
+    
+}
+
+// le asignamos como prototipo una persona
+
+Agente.prototype = new Persona('soy un prototipo')
+
+var agente = new Agente('Smith');
+
+agente.saluda();
+
+console.log(
+    Object.getPrototypeOf(agente),
+    agente instanceof Agente,
+    agente instanceof Persona,
+    agente instanceof Object
+);
