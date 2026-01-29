@@ -56,5 +56,25 @@ console.log(
     Object.getPrototypeOf(agente),
     agente instanceof Agente,
     agente instanceof Persona,
-    agente instanceof Object
+    agente instanceof Object,
+    Agente.prototype
 );
+
+
+// ________HERENCIA MULTIPLE(MIXIN)__________
+
+
+function Superheroe() {
+    this.vuela = function(){
+        console.log(this.name + ' vuela');
+    },
+    this.esquiva = function() {
+        console.log(this.name + ' esquiva balas');
+    }
+}
+
+
+Object.assign(Agente.prototype, new Superheroe());
+
+agente.vuela()
+agente.esquiva()
