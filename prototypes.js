@@ -76,5 +76,7 @@ function Superheroe() {
 
 Object.assign(Agente.prototype, new Superheroe());
 
-agente.vuela()
-agente.esquiva()
+agente.vuela();
+agente.esquiva();
+
+
