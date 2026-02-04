@@ -27,3 +27,7 @@ calculadora.mult(5,5)
 calculadora.resta(5,5)
 calculadora.suma(5,5)
 calculadora.div(5,5)
+
+calculadora.suma(6,8)
+calculadora.suma(6,9)
+calculadora.suma(6,6)
