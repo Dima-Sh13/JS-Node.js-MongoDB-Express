@@ -30,4 +30,7 @@ calculadora.div(5,5)
 
 calculadora.suma(6,8)
 calculadora.suma(6,9)
+calculadora.div(6,0)
 calculadora.suma(6,6)
+calculadora.mult(6,6000)
+calculadora.resta(6,-6)
