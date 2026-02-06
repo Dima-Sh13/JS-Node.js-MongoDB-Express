@@ -17,3 +17,18 @@ router.put('/ruta', function(req, res) {
     console.log('query-string', req.query);
     var id = req.query.id
 });
+
+
+// peticion: http://localhost:3000/apiv1/anuncios?id=66
+
+
+// recibimos parametros en el body
+
+router.put('/ruta/:id', function(req, res) {
+    console.log('body', req.body);
+    var nombre = req.body.nombre
+});
+
+
+// peticion http://localhost:3000/apiv1/anuncios
+//{nombre:'Pepe}
