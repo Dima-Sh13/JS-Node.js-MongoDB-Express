@@ -52,3 +52,6 @@ app.use(function(err, req, res, next) {
 app.use(express.static('public', options));
 
 // son los proporcionados por los desarolladores de express
+
+
+// y los middlewares de terceros que son los que podemos instalar con npm
