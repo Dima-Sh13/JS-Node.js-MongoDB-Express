@@ -31,4 +31,4 @@ router.put('/ruta/:id', function(req, res) {
 
 
 // peticion http://localhost:3000/apiv1/anuncios
-//{nombre:'Pepe}
+//{nombre:'Pepe'}
