@@ -13,3 +13,24 @@ res.send(new Buffer("whoop")); // Buffer es un objeto asique mandamos la instanc
 res.status(404).send('Sorry we cannot find that');
 
 
+// metodo de respuesta con json
+
+
+res.json(null)
+res.json({user: 'tobhias'})
+res.status(500).json({error: 'message'})
+
+
+// metodo download. este metodo es el tipico que nos abre una ventana de guardar como.
+// el nombre del fichero es opcional 
+res.download('/report-12.pdf', 'report-otro.pdf');
+
+
+// metodo redirect. redirige al ususario a un path absoluto o relativo, o devuelta desde donde ha venido con back
+
+res.redirect('foo/bar'); // relativa al root host name
+res.redirect('http://example.com'); // absoluta
+res.redirect(301, 'http://example.com'); // con status
+res.redirect('../login'); // ruta relativa al path actual
+res.redirect('back');  // vuelve al referer
+
