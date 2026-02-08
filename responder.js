@@ -32,5 +32,33 @@ res.redirect('foo/bar'); // relativa al root host name
 res.redirect('http://example.com'); // absoluta
 res.redirect(301, 'http://example.com'); // con status
 res.redirect('../login'); // ruta relativa al path actual
-res.redirect('back');  // vuelve al referer
+res.redirect('back');  // vuelve al referer, de la pagina de la que venia
+
+
+
+// metodo render. usado para mandar paginas o vistas como respuesta
+// acepta parametro opcional 'locals' para dar variables locales a la vista
+
+res.render('index');
+
+
+//render de la vista user con el objeto locals
+res.render('users', {name: 'tobi'});
+
+
+
+// metodo sendFile. envia un fichero como si fuera estatico. acepta un objeto opciones y un callback para comprobar los resultados de la transmision
+
+
+var options = {
+    headers: {
+        'x-timestamp': Date.now(),
+        'x-sent': true
+    }
+};
+
+res.sendFile(fileName, options);
+
+
+
 
