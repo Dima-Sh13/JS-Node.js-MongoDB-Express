@@ -2,4 +2,5 @@
 
 var bd = require('mongo');
 
-bd.connect()
+var express = require('express');
+bd.connect();
