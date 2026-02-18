@@ -49,4 +49,7 @@ es una operacion atomica, se ejecuta de una.
 
 Este se suele usar para transacciones importantes como cuentas de banco y saldos
 Este commando es uno de los mas importantes en MongoDB
+
+$text indica que queremos hacer una busqueda de texto
+
 */
