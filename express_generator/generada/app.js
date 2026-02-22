@@ -48,4 +48,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+function isApi(req) {
+    console.log(req.originalUrl)
+    return req.originalUrl.indexOff('/api')  === 0;
+}
+
+
 module.exports = app;

@@ -19,4 +19,27 @@ router.get('/', function(req,res, next) {
 });
 
 
+// crear un agente
+router.post('/', function(req, res, next) {
+    console.log(req.body);
+    var agente = new agente(req.body);
+    agente.save(function(err, agenteGuardado) {
+        if (err) {
+            next(err);
+            return;
+        }
+    })
+    res.json({ok: true, res:'agente guardfado'})
+        
+} )
+
+
+// actualizar un agente
+
+
+
+// borrar unagente
+
+
+
 module.exports(router)
