@@ -8,9 +8,13 @@ function(err,db) {
         return process.exit();
     }
     db.collection('agentes').find({}).toArray(function(err, docs){
-        if (err) throw err;
+        if (err) {
+            console.log(err)
+             return process.exit();
+        }
         console.dir(docs);
         db.close();
     })
 }
 )
+
