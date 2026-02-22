@@ -11,6 +11,7 @@ var clients = require('./routes/clients');
 var app = express();
 
 require('/mongoose');
+require('./models/agente')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
