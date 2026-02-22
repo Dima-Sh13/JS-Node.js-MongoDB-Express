@@ -36,6 +36,17 @@ router.post('/', function(req, res, next) {
 
 // actualizar un agente
 
+router.put('/:id', function(req, res, next) {
+    var id = req.params.id;
+    agente.update({_id: id}, req.body, function(err, res) {
+        if (err) {
+            next(err);
+            return
+        }
+    })
+    res.json({ok:true, res:'Agente con id' + id + 'actualizado'});
+});  
+
 
 
 // borrar unagente
