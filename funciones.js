@@ -34,6 +34,8 @@ function accesoContexto() {
 
 accesoContexto();
 
+console.log('esto pasa');
+
 
 // método de un objeto
 
