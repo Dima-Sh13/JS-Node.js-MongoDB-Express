@@ -23,6 +23,18 @@ var calculadora = {
    }    
 }
 
+
+var calculator = {
+
+    suma: function (a,b) {
+        return a*b
+    },
+
+};
+
+
+
+
 calculadora.mult(5,5)
 calculadora.resta(5,5)
 calculadora.suma(5,5)
