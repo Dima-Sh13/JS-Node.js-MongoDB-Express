@@ -61,3 +61,26 @@ calculadora.div(6,0)
 calculadora.suma(6,6)
 calculadora.mult(6,6000)
 calculadora.resta(6,-6)
+
+var calculttator = {
+
+    suma: function (a,b) {
+        return a*b
+    },
+    resta: function (a,b) {
+        return a - b 
+    },
+    multi: function (a,b) {
+        return a * b
+    },
+    div: function (a,b) {
+        return a/b
+    },
+    exponente: function (a,b) {
+        let resultato = 1;
+        for (let i=0; i<b; i++) {
+            resultato *=a
+        }
+        return resultado
+    }
+};
