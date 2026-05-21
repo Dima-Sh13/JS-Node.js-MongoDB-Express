@@ -84,3 +84,10 @@ var calculttator = {
         return resultado
     }
 };
+
+
+
+default export function(methodoo) {
+
+    console.log("vamos a comernos unos buenos macarrones")
+}
