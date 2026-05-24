@@ -84,6 +84,50 @@ var calculttator = {
         return resultado
     }
 };
+var calculttator = {
+
+    suma: function (a,b) {
+        return a*b
+    },
+    resta: function (a,b) {
+        return a - b 
+    },
+    multi: function (a,b) {
+        return a * b
+    },
+    div: function (a,b) {
+        return a/b
+    },
+    exponente: function (a,b) {
+        let resultato = 1;
+        for (let i=0; i<b; i++) {
+            resultato *=a
+        }
+        return resultado
+    }
+};
+var calculttator = {
+
+    suma: function (a,b) {
+        return a*b
+    },
+    resta: function (a,b) {
+        return a - b 
+    },
+    multi: function (a,b) {
+        return a * b
+    },
+    div: function (a,b) {
+        return a/b
+    },
+    exponente: function (a,b) {
+        let resultato = 1;
+        for (let i=0; i<b; i++) {
+            resultato *=a
+        }
+        return resultado
+    }
+};
 
 
 
