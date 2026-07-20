@@ -94,6 +94,20 @@ function Coches(modelo, precio) {
 }
 
 
+let gregorio = new Coches('Peugeout 208 GT', '12000kr')
+
+
+
+console.log(gregorio)
+
+
+console.log(gregorio.getPrice())
+
+console.log(gregorio.getModelo())
+
+
+
+
 
 
 
