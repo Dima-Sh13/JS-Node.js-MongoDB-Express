@@ -71,7 +71,27 @@ limon.setNombre('Manzana');
 
 console.log(limon.getNombre());
 
+// constructor de objetos 2.0
 
+function Coches(modelo, precio) {
+  this.getModelo = function() {
+    return modelo;
+  };
+
+  this.setModelo = function(value) {
+    modelo = value ;
+
+  };
+  this.getPrice = () => {
+    return precio;
+  };
+
+  this.setPrice = (newPrice) => {
+    precio = newPrice;
+  };
+
+
+}
 
 
 
